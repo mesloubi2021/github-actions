@@ -42,7 +42,7 @@ jobs:
       DATA_ARTIFACT_NAME: 'maven-build-scan-data'
     steps:
       - name: Download Workflow Artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: ${{ env.DATA_ARTIFACT_NAME }}
           path: ${{ env.DATA_ARTIFACT_NAME }}
